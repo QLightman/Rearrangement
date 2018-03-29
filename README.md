@@ -1,22 +1,22 @@
 # Rearrangement
 Visualization program built on [node.js](https://nodejs.org/en/) [express](http://expressjs.com/) for interactive rearrangement on data for user exploration.
 
-# Installation
+## Installation
 ```
 express project_name --view=ejs
 cd project_name
 npm install
 ```
 
-# Running
+## Running
 ```
 npm start
 ```
 
-# Usage
+## Usage
 To be continued.
 
-# Monitoring
+## Monitoring
 ```
 cd bin
 supervisor www
