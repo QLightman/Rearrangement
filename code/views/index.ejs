@@ -6,27 +6,32 @@
     <title>Rearrangement</title>
     <link rel="stylesheet" href="/stylesheets/chosen.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/slider.css">
+    <link rel="stylesheet" href="/stylesheets/input.css">
 
     <script src="lib/d3.min.js"></script>
     <script src="lib/jquery.min.js"></script>
     <script src="lib/chosen.jquery.js"></script>
+    <script src="lib/underscore-min.js"></script>
 
 </head>
 
 <body>
-    <div id=left_div></div>
-    <div id=middle_div></div>
-    <div id=block1_div>
-        <div id=block1_top_div></div>
-        <div id=block1_bottom_div></div>
+    <div id=top_div>
+        <select data-placeholder="select the threshold" class="simple_select" id="threshold_select">
+                    <option ></option>
+                      </select> &nbsp &nbsp &nbsp
+        <select data-placeholder="select the property" class="simple_select" id="property_select">
+                            <option ></option>
+                        </select>
+        <select data-placeholder="select the number" class="simple_select" id="number_select">
+                                <option ></option>
+                            </select>
     </div>
-    <div id=block2_div>
-        <div id=block2_top_div></div>
-        <div id=block2_bottom_div></div>
-    </div>
-    <div id=block3_div>
-        <div id=block3_top_div></div>
-        <div id=block3_bottom_div></div>
+    <div id=main_div>
+        <div id=left_div></div>
+        <div id=middle_div></div>
+        <div id=block_div></div>
     </div>
     <script src="/javascripts/initial.js"></script>
     <script src="/javascripts/draw_view.js"></script>
