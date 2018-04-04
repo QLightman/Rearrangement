@@ -6,7 +6,6 @@
     <title>Rearrangement</title>
     <link rel="stylesheet" href="/stylesheets/chosen.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="/stylesheets/slider.css">
     <link rel="stylesheet" href="/stylesheets/input.css">
 
     <script src="lib/d3.min.js"></script>
@@ -18,19 +17,26 @@
 
 <body>
     <div id=top_div>
-        <select data-placeholder="select the threshold" class="simple_select" id="threshold_select">
-                    <option ></option>
-                      </select> &nbsp &nbsp &nbsp
-        <select data-placeholder="select the property" class="simple_select" id="property_select">
+        <div id=top_left_div>
+            <center>
+                select the threshold:
+                <input id="threshold_select" class="Input_style" placeholder="0" /> %
+            </center>
+        </div>
+
+        <div id=top_right_div>
+            <center>
+                <select data-placeholder="select the property" class="simple_select" id="property_select">
+                        <option ></option>
+                    </select>
+                <select data-placeholder="select the number" class="simple_select" id="number_select">
                             <option ></option>
                         </select>
-        <select data-placeholder="select the number" class="simple_select" id="number_select">
-                                <option ></option>
-                            </select>
+            </center>
+        </div>
     </div>
     <div id=main_div>
         <div id=left_div></div>
-        <div id=middle_div></div>
         <div id=block_div></div>
     </div>
     <script src="/javascripts/initial.js"></script>

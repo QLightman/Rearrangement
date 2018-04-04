@@ -37,17 +37,18 @@ var draw_view = {
                 .attr("height", function(d) {
                     return block_height * d;
                 })
-                .attr("x", function(d, i) {
-                    return block_width * (3 + i);
+                .attr("x", function(d, t) {
+                    return block_width * (3 + t);
                 })
                 .attr("y", function(d) {
                     return y_distance - block_height * d;
                 })
                 .attr("stroke", "black")
                 .attr("stroke-width", 1)
-                .attr("fill", function(d, i) {
+                .attr("fill", function(d) {
                     return "white";
-                });
+                })
+
             this.line_array[i] = self.view.append("g")
                 .append("line")
                 .attr("x1", 3 * block_width)

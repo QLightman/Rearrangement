@@ -8,24 +8,34 @@
     height: 95%;
 }
 
-#middle_div {
+#left_div {
     float: left;
-    height: 100%;
-    width: 2%;
+    width: 30%;
 }
 
 #left_div,
 #block_div {
-    float: left;
     height: 100%;
-    width: 30%;
     border: 1px solid #AAAAAA;
     border-radius: 4px;
     box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, .25);
 }
 
+#top_left_div {
+    float: left;
+    height: 100%;
+    width: 30%;
+}
+
+#top_right_div {
+    float: right;
+    height: 100%;
+    width: 68%;
+}
+
 #block_div {
-    width: 66%;
+    float: right;
+    width: 68%;
 }
 
 #select {
@@ -42,37 +52,16 @@ text {
     text-anchor: middle;
 }
 
-.input {
-    position: fixed;
-    left: 150px;
-    top: 0;
-    width: 200px;
-    height: 30px;
-    background: #ddd;
-    border: 2px solid black;
+.tooptip {
+    position: absolute;
+    width: auto;
+    height: auto;
     text-align: center;
+    font-family: simsun;
     font-size: 20px;
-    margin: 4px 2px;
-    border-radius: .5em;
-}
-
-.button {
-    position: fixed;
-    left: 400px;
-    top: 0;
-    background-color: black;
-    opacity: 0.8;
-    border: 5px;
-    color: white;
-    padding: 8px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    border-radius: .5em;
-    cursor: pointer;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: black;
 }

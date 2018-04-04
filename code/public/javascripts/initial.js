@@ -3,6 +3,10 @@ var current_position = [0, 20],
     previous_position = [0, 20],
     number_of_stage = 0,
     property_list = 0;
+var tooptip = d3.select("body")
+    .append("div")
+    .attr("class", "tooptip")
+    .style("opacity", 0.0);
 $(document).ready(function() {
     var wWidth = window.innerWidth;
     var wHeight = window.innerHeight;
@@ -12,28 +16,22 @@ $(document).ready(function() {
 });
 
 function initialize() {
-    for (var i = 1; i < 10; i++)
-        $("#threshold_select").append("<option value='" + (i * 10) + "'>" + i * 10 + "%" + "</option>")
+
     for (var i = 2; i < 8; i++)
         $("#number_select").append("<option value='" + (i) + "'>" + i + "</option>")
-    $('#threshold_select').chosen({
-        width: "30%"
-    });
-
     $('#number_select').chosen({
-        width: "20%"
+        width: "25%"
     });
     draw_view.initialize();
     draw_sub_view.initialize();
-
 
     d3.csv("data/Assignment3-hotel.csv", function(error, data) {
         if (error) console.log(error);
         var data = d3.csvFormat(data);
         console.log(data)
         data_handler(data);
-
     })
+
 }
 
 function data_handler(data) {
